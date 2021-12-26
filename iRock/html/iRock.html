@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A rocha virtual de estimação</title>
+    <script type="text/javascript">
+       
+       function touchrock() { /*Criando uma função que sera chamada pelo evento onclick (click com o mouse)*/
+         var userName = prompt('Qual o seu nome?');
+
+            if (userName) {
+             alert('Prazer em conhecer você, '+userName+".");
+             document.getElementById("rockImg").src="/iRock/imagens/rock_happy.png" /*troca a imagem por outra sorrindo usando o ID criado na div*/
+            }  
+        }
+    </script>
+</head>
+
+<body onload="alert('olá, eu sou a rocha de estimação.');"> <!--exibi a mensagem do "alert" assim que a pagina é carregada-->
+   
+
+<div style="margin-top: 100px; text-align:center"><img id="rockImg" src="/iRock/imagens/rock.png" alt="iRock" style="cursor:pointer" onclick=touchrock();>
+     <!--organiza a imagem e centraliza ela, o style faz com que o curso se torne um mão apontando ao invés da seta-->
+     <!--o evento onclick faz com que a função touchRock seja chamada quando a rocha é clicada-->
+</div> 
+ 
+</body>
+</html>
+
+
